@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{844CCB3A-3DA7-4FC9-BAD2-F7C15D06E218}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{34364676-E2DC-4084-9AA9-AEC2BABB0A4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{863D15CD-684C-4962-9FAB-92EAA687A0B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Globals", "Globals", "{AF850A89-9FFE-4CF8-85C5-D4C9B9446092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLease.Feature.Globals", "src\Feature\Globals\code\CarLease.Feature.Globals.csproj", "{AA565DA2-9CF2-44DD-AAA7-884BA238838E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{9FD9C4C8-6D33-4733-BFDE-4C6C6E2C34CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLease.Project.Website", "src\Project\Website\code\CarLease.Project.Website.csproj", "{4CB69E5F-A246-4302-8D02-E60A23F29BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLease.Feature.Cars", "src\Feature\Cars\code\CarLease.Feature.Cars.csproj", "{99B0C776-7E74-43A0-A6F6-7C58A4370337}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67DCDD5B-30B0-4691-A420-326DE28095D8} = {67DCDD5B-30B0-4691-A420-326DE28095D8}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{285E2B77-4D85-42AF-AE5F-E22B71C4A787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0AD99F0A-47CE-4BE7-A30E-2EB6ADE367FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLease.Foundation.Common", "src\Foundation\Common\code\CarLease.Foundation.Common.csproj", "{67DCDD5B-30B0-4691-A420-326DE28095D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cars", "Cars", "{E6F0D7F7-B325-4F2D-BCB0-EBB597827B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLease.Feature.Cars.Tests", "src\Feature\Cars\tests\code\CarLease.Feature.Cars.Tests.csproj", "{390E3DFC-A9BD-4496-9F10-8A876D4186B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA565DA2-9CF2-44DD-AAA7-884BA238838E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA565DA2-9CF2-44DD-AAA7-884BA238838E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA565DA2-9CF2-44DD-AAA7-884BA238838E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA565DA2-9CF2-44DD-AAA7-884BA238838E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB69E5F-A246-4302-8D02-E60A23F29BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB69E5F-A246-4302-8D02-E60A23F29BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB69E5F-A246-4302-8D02-E60A23F29BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB69E5F-A246-4302-8D02-E60A23F29BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B0C776-7E74-43A0-A6F6-7C58A4370337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B0C776-7E74-43A0-A6F6-7C58A4370337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B0C776-7E74-43A0-A6F6-7C58A4370337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B0C776-7E74-43A0-A6F6-7C58A4370337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DCDD5B-30B0-4691-A420-326DE28095D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DCDD5B-30B0-4691-A420-326DE28095D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DCDD5B-30B0-4691-A420-326DE28095D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DCDD5B-30B0-4691-A420-326DE28095D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{390E3DFC-A9BD-4496-9F10-8A876D4186B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{390E3DFC-A9BD-4496-9F10-8A876D4186B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{390E3DFC-A9BD-4496-9F10-8A876D4186B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{390E3DFC-A9BD-4496-9F10-8A876D4186B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF850A89-9FFE-4CF8-85C5-D4C9B9446092} = {34364676-E2DC-4084-9AA9-AEC2BABB0A4D}
+		{AA565DA2-9CF2-44DD-AAA7-884BA238838E} = {AF850A89-9FFE-4CF8-85C5-D4C9B9446092}
+		{9FD9C4C8-6D33-4733-BFDE-4C6C6E2C34CC} = {863D15CD-684C-4962-9FAB-92EAA687A0B9}
+		{4CB69E5F-A246-4302-8D02-E60A23F29BC3} = {9FD9C4C8-6D33-4733-BFDE-4C6C6E2C34CC}
+		{99B0C776-7E74-43A0-A6F6-7C58A4370337} = {E6F0D7F7-B325-4F2D-BCB0-EBB597827B78}
+		{285E2B77-4D85-42AF-AE5F-E22B71C4A787} = {844CCB3A-3DA7-4FC9-BAD2-F7C15D06E218}
+		{0AD99F0A-47CE-4BE7-A30E-2EB6ADE367FE} = {844CCB3A-3DA7-4FC9-BAD2-F7C15D06E218}
+		{67DCDD5B-30B0-4691-A420-326DE28095D8} = {0AD99F0A-47CE-4BE7-A30E-2EB6ADE367FE}
+		{E6F0D7F7-B325-4F2D-BCB0-EBB597827B78} = {34364676-E2DC-4084-9AA9-AEC2BABB0A4D}
+		{390E3DFC-A9BD-4496-9F10-8A876D4186B0} = {E6F0D7F7-B325-4F2D-BCB0-EBB597827B78}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {79E2DC17-4723-47CC-845A-2C60A4FFE175}
+	EndGlobalSection
+EndGlobal

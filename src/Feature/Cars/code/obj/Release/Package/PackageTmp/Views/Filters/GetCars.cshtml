@@ -1,0 +1,23 @@
+﻿
+@model CarLease.Feature.Cars.Models.CarListsModel
+
+<div class="container">
+    <div class="list-group-item-text">
+
+        @if (@Model != null)
+        {
+
+            foreach (var car in Model.Cars)
+            {
+                <div>
+                    <span>@car.Title</span>
+                    <span>@car.ShortDescription</span>;
+
+                </div>
+            }
+
+        }
+    </div>
+</div>
+
+

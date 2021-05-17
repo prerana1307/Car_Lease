@@ -1,0 +1,35 @@
+﻿
+@model CarLease.Feature.Cars.Models.CarListsModel
+
+@using Sitecore.Mvc;
+
+@{    
+        var contextSite = @Html.Sitecore().CurrentItem != null ? @Html.Sitecore().CurrentItem.ID.ToString() : "";
+    
+}
+<div data-context="@Html.Sitecore().CurrentRendering.Item.ID.ToString()">
+    <div class="container" style="display:block" id="car-List">
+
+        @if (@Model != null)
+        {
+
+            foreach (var car in Model.Cars)
+            {
+                <div>
+                    <img style="height:180px; margin: 20px auto 0; box-sizing:border-box;text-align:left" src="@car.Image" />
+                </div>
+                <h3>@car.Title</h3>
+
+                <h4>@car.ShortDescription</h4>
+
+
+            }
+
+        }
+
+    </div>
+</div>
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.js"></script>
+<script src="~/Scripts/Filters/Filters.js"></script>
+
